@@ -1,3 +1,366 @@
+
+BUATKAN AKU SEBUAH WEB UNTUK EKSPEDISI ANGKUTAN DISINI BUAT SEMENARIK MUNGKIN, RESPONSIF DAN INFORMATIF. DESAINNYA HARUS BAGUS ADA ANIMAS TRUK JALAN DARI KIRI KE KANAN JANGAN DARI EMOJI ATAU EMOTICON YA, LALU YANG TERPENTING SECTIONNYA YANG BAGUS. NAMA PERUSAHAANNYA ARTHALINTAS YA , OH IYA SATU FITUR YANG PENTING ITU ADA CONVERT HARGA MULAI DARI PILIH PROVINSI KABUPATEN KECAMATAN LALU DIKIRIM KEMANA JADI MUNCUL ESTIMASI HARGA DENGAN PILIHAN MEMAKAI KONTAINER UKURAN BERAPA GITU YANG BISA DIPILIH DAN SEMUANYA INI INFORMATIF YA. JADI NANTI TETAP HARUS ADA FAQ, ABOUT COMPANY, KONTAK DLL. PAHAM?
+
+
+Menganalisis kebutuhan website ekspedisi dengan fitur kalkulator harga terintegrasi.
+
+
+Saya akan buatkan website ekspedisi Arthalintas yang menarik dan fungsional. Izinkan saya melihat skill frontend-design terlebih dahulu untuk memastikan kualitas desain terbaik.
+
+Reading frontend design skill for best practices
+
+Merancang website ekspedisi dengan desain industrial, animasi SVG, dan kalkulator harga dinamis.
+
+
+Sekarang saya akan membuat website Arthalintas yang stunning dengan semua fitur yang diminta.
+
+
+2 langkah
+
+Copy file to outputs directory for user access
+
+
+
+Menyiapkan file output dan menyusun presentasi hasil.
+
+Done. Website Arthalintas sudah jadi.
+
+Lihat Website Arthalintas
+
+Yang sudah dibuat:
+
+Hero Section dengan animasi truk SVG bergerak dari kiri ke kanan di atas jalan raya lengkap dengan efek roda berputar, asap knalpot, dan garis jalan bergerak. Truk ini bukan emoji, tapi full SVG dengan branding "ARTHALINTAS".
+
+Kalkulator Harga lengkap dengan:
+
+Dropdown Provinsi → Kabupaten/Kota → Kecamatan (data 8 provinsi di Indonesia)
+Lokasi asal dan tujuan terpisah
+4 pilihan kontainer: CDD (5 ton), Fuso (10 ton), Container 20ft (20 ton), Container 40ft (28 ton)
+Kalkulasi otomatis berdasarkan jarak dan ukuran kontainer
+Harga dinamis real-time
+Section lengkap:
+
+Stats (500+ armada, 34 provinsi, 10K+ pengiriman/bulan, 99% kepuasan)
+6 Layanan (Reguler, Express, Kargo, Asuransi, Tracking, Door to Door)
+About Company dengan ilustrasi armada
+FAQ 6 pertanyaan dengan accordion interaktif
+Contact dengan form lengkap
+Footer dengan social media links
+Fitur teknis: Fully responsive, smooth scroll, navbar sticky dengan efek blur, animasi hover, mobile menu hamburger.
+
+Arthalintas
+Kode · HTML 
+ini apa aman? lalu untuk seo sudah kamu tambahkan semuanya? kamu gak memakai taildwind atau framework gitu biar lebih aaman dan rapi dan gak berat atau giumana?
+
+
+Evaluated keamanan, SEO, dan mengapa vanilla CSS lebih optimal.
+
+
+
+Pertanyaan bagus. Saya jawab blak-blakan:
+
+1. Keamanan
+Status: Relatif Aman
+
+Ini pure HTML/CSS/JS vanilla — tidak ada backend, tidak ada database, tidak ada dependency eksternal yang bisa di-exploit
+Form contact hanya alert() — tidak kirim data kemana-mana (ini perlu diintegrasikan dengan backend/email service nanti)
+Satu-satunya external resource: Google Fonts
+Yang perlu diperhatikan kalau deploy:
+
+Form harus diintegrasikan dengan backend (PHP/Node) atau service seperti Formspree/EmailJS
+Kalau pakai input user untuk database, WAJIB sanitize
+2. SEO
+Jujur: BELUM LENGKAP. Saya skip beberapa hal penting:
+
+Meta description, keywords, OG tags untuk social sharing
+Schema markup (LocalBusiness, Organization)
+Semantic HTML bisa lebih optimal
+Alt text untuk SVG/images
+3. Tailwind/Framework
+Tidak pakai Tailwind itu justru KEPUTUSAN YANG BENAR untuk kasus ini:
+
+Vanilla CSS (yang saya pakai)	Tailwind CDN
+~15KB CSS inline	+50KB minimum
+Zero dependency	Dependency CDN
+Full control	Class bloat di HTML
+Faster load	Slower initial load
+Tailwind bagus untuk development tim besar dengan design system. Untuk single landing page seperti ini, vanilla CSS lebih ringan dan aman.
+
+Saya perbaiki sekarang dengan SEO lengkap:
+
+
+14 langkah
+
+Check file size and line count
+
+
+
+Menganalisis ukuran file dan menyiapkan penjelasan komprehensif.
+
+
+Done. Sudah saya update dengan SEO lengkap.
+
+Lihat Website Updated
+
+Yang Sudah Ditambahkan:
+SEO Meta Tags
+Title, description, keywords yang optimal
+Robots directive
+Language & geo tags
+Canonical URL
+Open Graph & Social
+OG tags untuk Facebook/LinkedIn sharing
+Twitter Card tags
+Image dimensions specified
+Schema.org Structured Data (4 schema)
+Organization — info perusahaan
+LocalBusiness — jam operasional, alamat
+FAQPage — FAQ muncul di Google rich snippets
+Service — layanan ekspedisi
+Accessibility
+Skip-to-content link
+ARIA labels di navigasi
+Semantic HTML (<main>, <nav>, <section>)
+Role attributes
+Performance
+Preconnect untuk Google Fonts
+Inline favicon (no extra request)
+Developer Notes
+Catatan keamanan untuk deployment
+Checklist sebelum go-live
+File Stats
+Metric	Value
+Total size	~90 KB
+Gzipped	~18 KB
+External deps	Hanya Google Fonts
+Framework	None (vanilla)
+Yang WAJIB Kamu Lakukan Sebelum Deploy:
+Ganti URL — Update https://www.arthalintas.co.id ke domain asli
+Form handler — Integrasikan dengan Formspree/EmailJS atau backend sendiri
+OG Image — Buat gambar 1200x630px untuk social sharing
+HTTPS — Wajib pakai SSL
+Favicon — Buat file .ico dan .png yang proper
+Vanilla CSS bukan masalah — justru lebih ringan dari Tailwind CDN yang 50KB+. File ini production-ready setelah kamu isi data real-nya.
+
+Arthalintas
+Kode · HTML 
+gimana kalau formhandlernya tentang saya mau kirim barang mulai dari a ke b gitu aja gasih dan diarahkan ke wa. Lalu repsosnif untuk tablet desktop hp jangan lupa ya rapikan semua. Dan FOntnya juga percantik lagi jangan monoton. Lalu jangan pakai emoji sama sekali aku gasuka emoji dan percantik tiap section jangan sampai ada bug
+
+
+Merancang ulang form pengiriman dengan desain responsif dan tipografi menarik.
+
+
+
+Oke, saya overhaul total. Form langsung ke WhatsApp, font lebih variatif, NO emoji, responsive sempurna, dan setiap section saya percantik.
+
+
+2 langkah
+
+Copy updated file to outputs
+
+
+
+Merangkum perubahan yang telah diselesaikan.
+
+Done. Website sudah di-overhaul total.
+
+Lihat Website Arthalintas
+
+Perubahan yang Dibuat:
+1. Form Handler ke WhatsApp
+Tombol "Pesan via WhatsApp" di kalkulator langsung generate pesan dengan detail lengkap (asal, tujuan, armada, estimasi harga)
+Form kontak juga langsung ke WhatsApp dengan nama, telepon, subjek, dan pesan
+Ganti nomor WhatsApp di variabel WHATSAPP_NUMBER di bagian script
+2. Font Lebih Variatif
+Elemen	Font
+Heading (h1-h6)	Plus Jakarta Sans - bold, modern
+Body text	DM Sans - clean, readable
+Angka/harga	JetBrains Mono - monospace, technical
+3. Zero Emoji
+Semua emoji dihapus termasuk yang di footer
+Diganti dengan SVG icons yang konsisten
+4. Full Responsive
+Desktop (1200px+)
+
+Grid 4 kolom untuk stats
+Grid 3 kolom untuk services
+Side by side layout untuk about dan contact
+Tablet (768px - 1024px)
+
+Grid 2 kolom untuk stats dan services
+Single column untuk calculator
+Adjusted spacing
+Mobile (< 768px)
+
+Single column semua section
+Hamburger menu dengan animasi slide-in
+Tombol full-width
+Font size yang nyaman dibaca
+Container options stack vertikal
+Small Mobile (< 480px)
+
+Extra compact spacing
+Smaller truck animation
+Optimized touch targets
+5. Section Improvements
+Hero: Geometric decorations, smoother truck animation, better smoke effect
+Stats: Hover effect, cleaner dividers
+Services: Top border animation on hover, better shadows
+Calculator: Checkmark indicator untuk selected container, cleaner layout
+About: Pattern overlay pada image, better badge positioning
+FAQ: Smoother accordion animation, keyboard accessible
+Contact: Form langsung ke WhatsApp
+Footer: Better social icons (SVG stroke-based), cleaner layout
+6. Bug Fixes
+Mobile menu body scroll lock saat terbuka
+Proper z-index layering
+Keyboard accessibility untuk FAQ (Enter/Space)
+Container selection visual feedback
+Smooth scroll dengan offset untuk fixed navbar
+Yang Perlu Kamu Ganti:
+javascript
+const WHATSAPP_NUMBER = '6281234567890'; // Ganti dengan nomor WA bisnis
+Cari di bagian script dan ganti dengan nomor WhatsApp bisnis yang sebenarnya (format: 62xxx tanpa + atau 0).
+
+Arthalintas
+Kode · HTML 
+1764930148327_image.png
+Ini ada yang terpotong? pastikan ya responsif semua
+
+
+Identified layout issues dan merencanakan perbaikan responsivitas.
+
+
+
+Saya lihat masalahnya - hero section terpotong, badge dan tombol CTA tidak terlihat. Saya perbaiki sekarang:
+
+
+14 langkah
+
+Replacing the entire responsive section with improved version
++426
+-190
+arthalintas-v2.html
+
+Memeriksa visibilitas tombol hero dan responsivitas desain.
+
+Now let me also verify the hero section has proper structure:
+
+
+16 langkah
+
+Verify output file
+
+
+
+Memverifikasi file dan memastikan responsivitas sempurna.
+
+Sudah diperbaiki. Masalah utama:
+
+Hero section terpotong - padding-bottom tidak cukup untuk memberikan ruang bagi road animation
+Badge dan tombol tidak terlihat - karena hero content terlalu dekat dengan road
+Lihat Website Arthalintas (Fixed)
+
+Perbaikan yang Dilakukan:
+Hero Section
+Tambah padding-bottom: 160px pada hero untuk memberikan ruang road animation
+Tambah min-height: 100dvh untuk dynamic viewport height (support mobile browser bar)
+Perbaiki padding-top pada hero-content
+Responsive Breakpoints
+Breakpoint	Perbaikan
+1024px	Hero padding adjusted
+768px	Truck diperkecil (150px), road height 100px, hero min-height auto
+480px	Truck 120px, semua element diperkecil proporsional
+max-height 700px	Special handling untuk layar pendek
+Landscape mobile	Hero compact mode, hide description
+Element Scaling
+Truck animation: 240px (desktop) > 150px (tablet) > 120px (mobile)
+Stats: 4 kolom > 2 kolom tetap di semua mobile sizes
+Container options: 2 kolom di mobile (tidak 1 kolom)
+Font sizes scaled properly di setiap breakpoint
+Tambahan
+Support untuk landscape orientation di mobile
+Support untuk layar dengan height pendek
+Semua section (services, calc, about, faq, contact) padding dikurangi di mobile
+Coba test di berbagai ukuran layar - seharusnya semua content visible sekarang.
+
+Arthalintas
+Kode · HTML 
+itu roadnya gak bisa kelihatan utuh dan full ya jalanan aspal dan garis putih putihnya. Lalu jangan lupa responsif ya untuk mobile desktop dan tablet
+
+
+Dianalisis masalah tampilan jalan dan responsivitas lintas perangkat.
+
+
+
+Saya perbaiki road-nya agar terlihat utuh dengan aspal dan garis putih yang jelas, plus pastikan responsif di semua device.
+
+
+10 langkah
+
+Verify output file
+
+
+
+Menyiapkan file dan merangkum perubahan responsif.
+
+Done. Road sudah diperbaiki agar terlihat utuh dan full.
+
+Lihat Website Arthalintas (Road Fixed)
+
+Perubahan pada Road:
+Struktur Jalan Baru
+┌─────────────────────────────────────────┐
+│         City Silhouette (gedung)        │
+├─────────────────────────────────────────┤
+│         Road Shoulder Top (bahu jalan)  │
+├═════════════════════════════════════════┤ ← Garis Putih Atas (solid)
+│                                         │
+│              ASPAL (tekstur)            │
+│                                         │
+│  - - - - - - - - - - - - - - - - - -   │ ← Garis Kuning Tengah (putus-putus, animasi)
+│                                         │
+│              ASPAL (tekstur)            │
+│                                         │
+├═════════════════════════════════════════┤ ← Garis Putih Bawah (solid)
+│         Road Shoulder Bottom            │
+└─────────────────────────────────────────┘
+        🚛 TRUK BERJALAN →
+Komponen Road:
+Element	Fungsi
+.road	Container utama jalan
+.road-asphalt	Tekstur aspal dengan gradient
+.road-texture	Detail tekstur aspal (titik-titik halus)
+.road-line-white-top	Garis putih solid atas
+.road-line-white-bottom	Garis putih solid bawah
+.road-line-yellow	Garis kuning putus-putus di tengah (animasi)
+.road-shoulder-top	Bahu jalan atas
+.road-shoulder-bottom	Bahu jalan bawah
+Responsive Scaling:
+Breakpoint	Road Height	Aspal	Truk
+Desktop (>1024px)	180px	100px	240px
+Tablet (1024px)	160px	85px	200px
+Mobile (768px)	130px	70px	160px
+Small Mobile (480px)	110px	58px	130px
+Landscape	90px	48px	110px
+Semua elemen jalan (aspal, garis putih, garis kuning) di-scale proporsional di setiap breakpoint agar tetap terlihat utuh.
+
+Arthalintas
+Kode · HTML 
+
+
+Dompet kosong
+Tambah dana
+
+
+
+
+
+
+
+Arthalintas · HTML
+Salin
+
 <!DOCTYPE html>
 <html lang="id" dir="ltr">
 <head>
@@ -374,11 +737,13 @@
         /* ==================== HERO ==================== */
         .hero {
             min-height: 100vh;
+            min-height: 100dvh;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--secondary) 100%);
             position: relative;
             display: flex;
             align-items: center;
             overflow: hidden;
+            padding-bottom: 200px;
         }
 
         .hero::before {
@@ -443,26 +808,74 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 140px;
-            background: linear-gradient(to top, #0a0f14 0%, #131c27 100%);
+            height: 180px;
+            background: linear-gradient(to top, #0f0f1a 0%, #1a1a2e 60%, transparent 100%);
             overflow: hidden;
         }
 
-        .road-bg {
+        .road {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 140px;
+            background: #2d2d3a;
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .road-asphalt {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             height: 100px;
-            background: #1a1a2e;
+            background: linear-gradient(to bottom, 
+                #3a3a4a 0%, 
+                #2d2d3a 20%, 
+                #252532 50%,
+                #1f1f2a 100%
+            );
         }
 
-        .road-line-center {
+        .road-texture {
             position: absolute;
-            bottom: 45px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.02) 1px, transparent 1px),
+                radial-gradient(circle at 80% 30%, rgba(255,255,255,0.02) 1px, transparent 1px),
+                radial-gradient(circle at 40% 70%, rgba(255,255,255,0.015) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .road-line-white-top {
+            position: absolute;
+            bottom: 95px;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .road-line-white-bottom {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .road-line-yellow {
+            position: absolute;
+            bottom: 52px;
             left: 0;
             width: 200%;
-            height: 4px;
+            height: 5px;
             background: repeating-linear-gradient(
                 90deg,
                 #FFD93D 0px,
@@ -470,37 +883,41 @@
                 transparent 50px,
                 transparent 100px
             );
-            animation: roadScroll 1.5s linear infinite;
+            animation: roadLineMove 1.5s linear infinite;
+            box-shadow: 0 0 15px rgba(255, 217, 61, 0.4);
         }
 
-        @keyframes roadScroll {
+        @keyframes roadLineMove {
             0% { transform: translateX(0); }
             100% { transform: translateX(-100px); }
         }
 
-        .road-edge {
+        .road-shoulder-top {
             position: absolute;
+            bottom: 100px;
             left: 0;
             right: 0;
-            height: 6px;
-            background: white;
+            height: 25px;
+            background: linear-gradient(to bottom, #1a1a2e 0%, #252532 100%);
         }
 
-        .road-edge-bottom {
-            bottom: 25px;
-        }
-
-        .road-edge-top {
-            bottom: 70px;
+        .road-shoulder-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 18px;
+            background: #1a1a2e;
         }
 
         /* Truck SVG Animation */
         .truck-wrapper {
             position: absolute;
-            bottom: 35px;
+            bottom: 45px;
             left: -280px;
             animation: truckMove 14s linear infinite;
             filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+            z-index: 10;
         }
 
         @keyframes truckMove {
@@ -535,14 +952,15 @@
         /* City Silhouette */
         .city-silhouette {
             position: absolute;
-            bottom: 100px;
+            bottom: 140px;
             left: 0;
             right: 0;
             height: 200px;
             display: flex;
             align-items: flex-end;
             justify-content: space-around;
-            opacity: 0.15;
+            opacity: 0.12;
+            padding: 0 2%;
         }
 
         .building {
@@ -556,7 +974,8 @@
             z-index: 10;
             max-width: 750px;
             padding: 0 5%;
-            padding-top: 100px;
+            padding-top: 120px;
+            padding-bottom: 2rem;
         }
 
         .hero-badge {
@@ -1559,6 +1978,68 @@
         }
 
         @media (max-width: 1024px) {
+            .hero {
+                padding-bottom: 180px;
+            }
+
+            .hero-content {
+                padding-top: 110px;
+            }
+
+            .road-container {
+                height: 160px;
+            }
+
+            .road {
+                height: 120px;
+            }
+
+            .road-asphalt {
+                height: 85px;
+            }
+
+            .road-texture {
+                height: 85px;
+            }
+
+            .road-line-white-top {
+                bottom: 82px;
+                height: 5px;
+            }
+
+            .road-line-white-bottom {
+                bottom: 12px;
+                height: 5px;
+            }
+
+            .road-line-yellow {
+                bottom: 45px;
+                height: 4px;
+            }
+
+            .road-shoulder-top {
+                bottom: 86px;
+                height: 20px;
+            }
+
+            .road-shoulder-bottom {
+                height: 14px;
+            }
+
+            .truck-wrapper {
+                bottom: 38px;
+            }
+
+            .truck-svg {
+                width: 200px;
+                height: 75px;
+            }
+
+            .city-silhouette {
+                bottom: 125px;
+                height: 150px;
+            }
+
             .stats {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1608,38 +2089,123 @@
                 display: block;
             }
 
+            .hero {
+                min-height: auto;
+                padding-bottom: 160px;
+            }
+
             .hero-content {
-                padding-top: 120px;
+                padding-top: 100px;
+                padding-bottom: 2rem;
             }
 
             .hero h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
+                margin-bottom: 1rem;
             }
 
             .hero-desc {
-                font-size: 1.05rem;
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-badge {
+                margin-bottom: 1rem;
             }
 
             .hero-buttons {
                 flex-direction: column;
+                gap: 0.75rem;
             }
 
             .hero-buttons .btn {
                 width: 100%;
                 justify-content: center;
+                padding: 0.875rem 1.5rem;
+            }
+
+            .road-container {
+                height: 130px;
+            }
+
+            .road {
+                height: 100px;
+            }
+
+            .road-asphalt {
+                height: 70px;
+            }
+
+            .road-texture {
+                height: 70px;
+            }
+
+            .road-line-white-top {
+                bottom: 68px;
+                height: 4px;
+            }
+
+            .road-line-white-bottom {
+                bottom: 10px;
+                height: 4px;
+            }
+
+            .road-line-yellow {
+                bottom: 37px;
+                height: 3px;
+            }
+
+            .road-shoulder-top {
+                bottom: 71px;
+                height: 16px;
+            }
+
+            .road-shoulder-bottom {
+                height: 12px;
+            }
+
+            .truck-wrapper {
+                bottom: 30px;
+            }
+
+            .truck-svg {
+                width: 160px;
+                height: 60px;
+            }
+
+            .city-silhouette {
+                bottom: 105px;
+                height: 100px;
             }
 
             .stats {
                 grid-template-columns: 1fr 1fr;
                 border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+                margin-top: -2rem;
             }
 
             .stat-item {
-                padding: 2rem 1.5rem;
+                padding: 1.5rem 1rem;
             }
 
             .stat-number {
-                font-size: 2rem;
+                font-size: 1.75rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            .services,
+            .calculator,
+            .about,
+            .faq,
+            .contact {
+                padding: 4rem 5%;
+            }
+
+            .section-header {
+                margin-bottom: 2.5rem;
             }
 
             .services-grid {
@@ -1647,21 +2213,30 @@
             }
 
             .calc-container {
-                padding: 1.5rem;
+                padding: 1.25rem;
             }
 
             .calc-section {
-                padding: 1.5rem;
+                padding: 1.25rem;
             }
 
             .container-options {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+
+            .container-option {
+                padding: 1rem 0.75rem;
+            }
+
+            .container-size {
+                font-size: 1.25rem;
             }
 
             .calc-result {
                 flex-direction: column;
                 text-align: center;
-                padding: 2rem;
+                padding: 1.5rem;
             }
 
             .result-actions {
@@ -1675,15 +2250,29 @@
             }
 
             .result-price {
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
 
             .about-features {
                 grid-template-columns: 1fr;
             }
 
+            .faq-question {
+                font-size: 0.95rem;
+                padding: 1.25rem 1.5rem;
+            }
+
+            .faq-answer-inner {
+                padding: 0 1.5rem 1.25rem;
+                font-size: 0.9rem;
+            }
+
             .form-row {
                 grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 1.5rem;
             }
 
             .footer-grid {
@@ -1696,28 +2285,108 @@
                 gap: 1rem;
                 text-align: center;
             }
-
-            .truck-svg {
-                width: 180px;
-                height: 70px;
-            }
-
-            .road-container {
-                height: 120px;
-            }
-
-            .truck-wrapper {
-                bottom: 30px;
-            }
         }
 
         @media (max-width: 480px) {
+            .hero-content {
+                padding-top: 90px;
+            }
+
+            .hero {
+                padding-bottom: 140px;
+            }
+
             .hero h1 {
-                font-size: 1.875rem;
+                font-size: 1.625rem;
+                letter-spacing: -0.5px;
+            }
+
+            .hero-badge {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.875rem;
+            }
+
+            .hero-desc {
+                font-size: 0.9rem;
+            }
+
+            .hero-buttons .btn {
+                font-size: 0.9rem;
+            }
+
+            .road-container {
+                height: 110px;
+            }
+
+            .road {
+                height: 85px;
+            }
+
+            .road-asphalt {
+                height: 58px;
+            }
+
+            .road-texture {
+                height: 58px;
+            }
+
+            .road-line-white-top {
+                bottom: 57px;
+                height: 3px;
+            }
+
+            .road-line-white-bottom {
+                bottom: 8px;
+                height: 3px;
+            }
+
+            .road-line-yellow {
+                bottom: 31px;
+                height: 3px;
+            }
+
+            .road-shoulder-top {
+                bottom: 59px;
+                height: 14px;
+            }
+
+            .road-shoulder-bottom {
+                height: 10px;
+            }
+
+            .truck-wrapper {
+                bottom: 24px;
+            }
+
+            .truck-svg {
+                width: 130px;
+                height: 48px;
+            }
+
+            .city-silhouette {
+                bottom: 88px;
+                height: 70px;
+            }
+
+            .city-silhouette .building {
+                transform: scale(0.7);
+                transform-origin: bottom;
             }
 
             .stats {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat-item {
+                padding: 1.25rem 0.75rem;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.75rem;
             }
 
             .stat-item::after {
@@ -1725,15 +2394,168 @@
             }
 
             .section-header h2 {
-                font-size: 1.5rem;
+                font-size: 1.35rem;
+            }
+
+            .section-header p {
+                font-size: 0.9rem;
+            }
+
+            .section-tag {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.875rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .service-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .service-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .service-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .service-card p {
+                font-size: 0.875rem;
             }
 
             .calc-container {
+                padding: 1rem;
+            }
+
+            .calc-section {
+                padding: 1rem;
+            }
+
+            .calc-section-title h4 {
+                font-size: 1rem;
+            }
+
+            .container-options {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .container-size {
+                font-size: 1.1rem;
+            }
+
+            .container-type {
+                font-size: 0.7rem;
+            }
+
+            .container-capacity {
+                font-size: 0.65rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .result-price {
+                font-size: 1.5rem;
+            }
+
+            .about-badge {
                 padding: 1.25rem;
             }
 
+            .about-badge-number {
+                font-size: 2rem;
+            }
+
             .contact-form-wrapper {
-                padding: 2rem;
+                padding: 1.25rem;
+            }
+        }
+
+        /* Short height screens */
+        @media (max-height: 700px) {
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding-top: 90px;
+                padding-bottom: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .hero-desc {
+                margin-bottom: 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            .hero-badge {
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        /* Landscape mobile */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                padding-bottom: 120px;
+            }
+
+            .hero-content {
+                padding-top: 80px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-desc {
+                display: none;
+            }
+
+            .road-container {
+                height: 90px;
+            }
+
+            .road {
+                height: 70px;
+            }
+
+            .road-asphalt {
+                height: 48px;
+            }
+
+            .road-line-white-top {
+                bottom: 47px;
+                height: 3px;
+            }
+
+            .road-line-white-bottom {
+                bottom: 7px;
+                height: 3px;
+            }
+
+            .road-line-yellow {
+                bottom: 26px;
+                height: 2px;
+            }
+
+            .truck-wrapper {
+                bottom: 20px;
+            }
+
+            .truck-svg {
+                width: 110px;
+                height: 42px;
+            }
+
+            .city-silhouette {
+                display: none;
             }
         }
     </style>
@@ -1802,10 +2624,15 @@
             </div>
 
             <div class="road-container" aria-hidden="true">
-                <div class="road-bg"></div>
-                <div class="road-edge road-edge-top"></div>
-                <div class="road-line-center"></div>
-                <div class="road-edge road-edge-bottom"></div>
+                <div class="road">
+                    <div class="road-shoulder-top"></div>
+                    <div class="road-asphalt"></div>
+                    <div class="road-texture"></div>
+                    <div class="road-line-white-top"></div>
+                    <div class="road-line-yellow"></div>
+                    <div class="road-line-white-bottom"></div>
+                    <div class="road-shoulder-bottom"></div>
+                </div>
 
                 <div class="truck-wrapper">
                     <svg class="truck-svg" viewBox="0 0 240 90" fill="none" xmlns="http://www.w3.org/2000/svg">
